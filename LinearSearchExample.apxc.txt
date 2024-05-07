@@ -1,0 +1,21 @@
+public class LinearSearchExample {
+    public static void main() {
+        Integer[] arr = new Integer[]{2, 4, 6, 8, 10};
+        Integer target = 6;
+        Boolean found = false;
+        
+        for (Integer i = 0; i < arr.size(); i++) {
+            if (arr[i] == target) {
+                System.debug('Element ' + target + ' found at index ' + i);
+                found = true;
+                break; // Exit the loop once the target element is found
+            }
+        }
+        
+        if (!found) {
+            System.debug('Element ' + target + ' not found in the array');
+        }
+    }
+}
+
+//how to run it - LinearSearchExample();
